@@ -1,29 +1,31 @@
-import { Fragment } from "react"
-
-export default function Layout(props){
-    const{children} = props
+export default function Layout(props) {
+    const { children } = props
 
     const header = (
         <header>
             <h1 className="text-medium text-gradient">
-                Unalive
+               Death Calculator
             </h1>
-
         </header>
     )
 
     const footer = (
         <footer>
-            Created by
-            <a target = "_blank" href="nothing here atm"/>
+            <small>Created by</small>
+            <a target="_blank" href="">
+                <img alt="pfp" src="https://media.licdn.com/dms/image/v2/C5603AQG6Q4W3kWANtw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1630988413596?e=1747872000&v=beta&t=07eM4oD3FQOgoGqbRiV15zqzeZSmCZkUVW3cXctLNic" />
+                <p>@ritesh</p>
+                <i className="fa-brands fa-linkedin-in"></i>
+            </a>
         </footer>
     )
-    return(
+
+    return (
         <>
             {header}
-            <main>
+            < main >
                 {children}
-            </main>
+            </main >
             {footer}
         </>
     )
